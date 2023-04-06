@@ -1,0 +1,186 @@
+:root{
+    scroll-behavior: smooth;
+    --light-brown: #D5CEA3;
+    --black: #252422;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--light-brown);
+    color: var(--black);
+    font-size: 1.4rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.6rem;
+}
+
+/* --------- NAV BAR --------- */
+
+nav{
+    background: var(--light-brown);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    border-bottom: 2px solid var(--black);
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav li{
+    display: inline;
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* --------- INTRO SECTION --------- */
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.intro-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 91%;
+}
+
+.intro-article{
+    max-width: 50%;
+}
+
+img{
+    max-width: 50%;
+    margin: 3rem 0 0 2rem;
+}
+
+/* --------- PRODUCTS SECTION --------- */
+
+#products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product{
+    color: var(--black);
+    max-width: 300px;
+    padding: 1rem 2rem;
+    border: 2px solid #252422;
+    border-radius: 4px;
+}
+
+header{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+button{
+    background: var(--black);
+    color: whitesmoke;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 100%;
+    width: 100%;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+/* --------- FOOTER --------- */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2rem 8rem;
+}
+
+.footer-section{
+    max-width: 400px;
+    margin: 0 1rem;
+}
+
+/* --------- MEDIA QUERIES --------- */
+
+@media only screen and (max-width: 800px){
+
+    body{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    header{
+        font-size: 1.4rem;
+    }
+
+    .intro-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .intro-article{
+        max-width: 100%;
+    }
+
+    #products{
+        margin: 2rem 1rem;
+    }
+
+    .product{
+    max-width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0.8rem;
+    }
+
+    img{
+        max-width: 100%;
+        margin: 0;
+    }
+}
